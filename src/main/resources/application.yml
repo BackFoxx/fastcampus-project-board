@@ -25,3 +25,6 @@ spring:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100 # 벌크 연산 단위
   sql.init.mode: always # 테스트 데이터를 밀어넣을 것인가
+  data.rest:
+      base-path: /api
+      detection-strategy: annotated
