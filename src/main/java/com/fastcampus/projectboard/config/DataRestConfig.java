@@ -11,6 +11,6 @@ public class DataRestConfig {
     public RepositoryRestConfigurer repositoryRestConfigurer() {
         return RepositoryRestConfigurer.withConfig((config, cors) -> {
             config.exposeIdsFor(UserAccount.class);
-        })
+        });
     }
 }

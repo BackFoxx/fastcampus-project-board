@@ -1,4 +1,4 @@
-package com.fastcampus.projectboard.domain.type;
+package com.fastcampus.projectboard.domain.constant;
 
 import lombok.Getter;
 
@@ -7,7 +7,7 @@ public enum SearchType {
     CONTENT("본문"),
     ID("유저 ID"),
     NICKNAME("닉네임"),
-    HASHTAG("해시태스");
+    HASHTAG("해시태그");
 
     @Getter private final String description;
 
