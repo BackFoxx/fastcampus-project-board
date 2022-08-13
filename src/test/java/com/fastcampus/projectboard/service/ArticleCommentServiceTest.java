@@ -139,15 +139,16 @@ class ArticleCommentServiceTest {
     @DisplayName("댓글 ID를 입력하면, 댓글을 삭제한다.")
     @Test
     void givenArticleCommentId_whenDeletingArticleComment_thenDeletesArticleComment() {
-        // given
+        // Given
         Long articleCommentId = 1L;
-        willDoNothing().given(articleCommentRepository).deleteById(articleCommentId);
+        String userId = "uno";
+        willDoNothing().given(articleCommentRepository).deleteByIdAndUserAccount_UserId(articleCommentId, userId);
 
-        // when
-        sut.deleteArticleComment(articleCommentId);
+        // When
+        sut.deleteArticleComment(articleCommentId, userId);
 
-        // then
-        then(articleCommentRepository).should().deleteById(articleCommentId);
+        // Then
+        then(articleCommentRepository).should().deleteByIdAndUserAccount_UserId(articleCommentId, userId);
     }
 
     private Article createArticle() {
