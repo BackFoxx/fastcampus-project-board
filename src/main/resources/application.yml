@@ -36,6 +36,6 @@ spring:
 spring:
   config.activate.on-profile: heroku
   datasource:
-    url: ${JAWSDB_URL}
+    url: ${JAWSDB_URL} # JawSQL로 변경
   jpa.hibernate.ddl-auto: create
   sql.init.mode: always
