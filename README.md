@@ -36,7 +36,7 @@ Spring Boot
 
 ## 데모 페이지
 
-* https://project-board-backfox.herokuapp.com/
+(작성 중)
 
 ## 질문, 건의
 
